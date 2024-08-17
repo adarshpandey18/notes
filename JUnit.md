@@ -116,6 +116,7 @@ public class CalcTest {
 ## Assertions
 Verification between **expected** and **actual** result.
 
+[](https://github.com/adarshpandey18/notes/blob/main/images/assertions.png)
 
 ---
 ## Surefire Plugin
