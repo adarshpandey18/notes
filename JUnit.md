@@ -116,7 +116,7 @@ public class CalcTest {
 ## Assertions
 Verification between **expected** and **actual** result.
 
-<img src="https://github.com/adarshpandey18/notes/blob/main/images/assertions.png" alt="Description" width="300" height="200">
+<img src="https://github.com/adarshpandey18/notes/blob/main/images/assertions.png" alt="Description"  >
 
 
 ---
