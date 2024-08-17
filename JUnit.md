@@ -37,6 +37,7 @@ It provides annotations and assertions that help developers verify that their co
 ## Maven for JUnit
 
 ### 1. Create Project
+<img src="https://github.com/adarshpandey18/notes/blob/main/images/create_new_project.png" width=400 height=400>
 
 ### 2. Add Dependency [Maven Repository](https://mvnrepository.com/)
 
@@ -98,7 +99,7 @@ public class CalcTest {
 ```
 >Convention for naiming test  ClassNameTest for eg : CalcTest
 ### 4. Run Test
-
+<img src="https://github.com/adarshpandey18/notes/blob/main/images/test_success.png" width=250 height=200>
 
 ---
 ## @Test
@@ -116,7 +117,7 @@ public class CalcTest {
 ## Assertions
 Verification between **expected** and **actual** result.
 
-<img src="https://github.com/adarshpandey18/notes/blob/main/images/assertions.png" alt="Description"  >
+<img src="https://github.com/adarshpandey18/notes/blob/main/images/assertions.png">
 
 
 ---
