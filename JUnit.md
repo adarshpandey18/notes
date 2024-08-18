@@ -123,6 +123,17 @@ Verification between **expected** and **actual** result.
 ---
 ## Surefire Plugin
 When projects goes into CI / CD their build process won't run the test cases so in order to run the whole project we have to integrate surefire.
+```
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+    </plugin>
+  </plugins>
+</build>
+```
 
 
 ---
@@ -174,6 +185,147 @@ void testArray() {
   assertArrayEquals(expected, actual);
 }
 ```
+---
+## Testing Performance
 
+**Sample Code :**
+```
+public class SortingArray {    
+  public int[] sortingArray(int[]array) {
+    for(int i = 0; i < 100000000; i++) {
+      Arrays.sort(array);
+    }
+    return array;
+  }
+}
+```
 
+**Test Code :**
+```
+public class TestingPerformance {
+  @Test
+  void sortingArrayTest() {
+    SortingArray sa = new SortingArray();
+    int[]unsorted = {5,4,3,2,1};
+    assertTimeout(Duration.ofMillis(10), ()-> sa.sortingArray(unosrted));
+  }
+}
+```
+**Test Case Failed :**
+```
+org.opentest4j.AssertionFailedError: execution exceeded timeout of 10 ms by 643 ms
+  ```
+> For JUnit4 `@Test(timeout=10)` is used.
 
+---
+## BeforeEach & AfterEach
+### @BeforeEach
+  Before each Test Case the method will be executed.
+### @AfterEach 
+  After each Test Case the method will be executed.
+
+**Example :**
+```
+public class Annotations {
+  @BeforeEach
+  void init() {
+    System.out.println("Before Each Executed");
+  }
+
+  @Test
+  void sampleTest1() {
+    System.out.println("Test 1");
+  }
+
+  @Test
+  void sampleTest2() {
+    System.out.println("Test 2");
+  }
+    
+  @AfterEach
+  void dispose() {
+    System.out.println("After Each Statement Executed");
+  }
+}
+```
+**Output :**
+```
+Before Each Executed
+Test 1
+After Each Statement Executed
+Before Each Executed
+Test 2
+After Each Statement Executed
+```
+---
+## BeforeAll & AfterAll
+### @BeforeAll
+  It executes only once before all Test Cases executed.
+### @AfterAll 
+  It executes only once after all Test Cases are executed.
+
+**Example :**
+```
+public class Annotations {
+  @BeforeAll
+  static void beforeAll(){
+      System.out.println("Before All Executed");
+  }
+
+  @Test
+  void sampleTest1() {
+      System.out.println("Test 1");
+  }
+
+  @Test
+  void sampleTest2() {
+      System.out.println("Test 2");
+   }
+
+  @AfterAll
+  static void afterAll(){
+      System.out.println("After All Executed");
+  }
+}
+```
+**Output :**
+```
+Before All Executed
+Test 1
+Test 2
+After All Executed
+```
+---
+## TestInstance Behavior
+In JUnit 5, a new instance of the test class is created for each test method by default. This means that if you have multiple test methods in a test class, JUnit will instantiate the test class once for each method before running that method for that reason the `@BeforeAll` and `@AfterAll`  methods are declared static and they are called once before the instance of test class is created.  
+
+In order to change the behaveious or TestInstance we use `@TestInstance()` annotation.
+
+- `@TestInstance(TestInstance.Lifecycle.PER_METHOD)` : It is default behavior. For every test method the instance is getting created.
+
+- `@TestInstance(TestInstance.Lifecycle.PER_CLASS)` : Multiple instance are not created. ***No need to use static methods for `@BeforeAll` & `@AfterAll` as now instancee is not getting created for every test method.***
+
+```
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class Annotations {
+  @BeforeAll
+  void beforeAll(){
+      System.out.println("Before All Executed");
+  }
+
+  @Test
+  void sampleTest1() {
+      System.out.println("Test 1");
+  }
+
+  @Test
+  void sampleTest2() {
+      System.out.println("Test 2");
+  }
+
+  @AfterAll
+  void afterAll() {
+      System.out.println("After All Executed");
+  }
+}
+```
