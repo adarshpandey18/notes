@@ -3,7 +3,7 @@
 ## Design Patterns
  ### A General reusable solution provided for a common problem within a context in software development.
 
- ### A description or a template which specifies how to solve a known problem.
+ > A description or a template which specifies how to solve a known problem.
 
 ## Advantages of Desing Patterns
 - It gives developer a selection of tried and tested solution.
@@ -29,7 +29,7 @@ Design Patterns
 ├── Structural
 └── Behavioral
 ```
-### Creational Design Pattern
+### <u>Creational Design Pattern</u>
 
 #### Creational Patterns aim to separate a system from how its objects are created, composed and represented.
 - Generic instantiation
@@ -43,7 +43,7 @@ Design Patterns
 - Prototype pattern
 - Singleton Pattern
 
-### Structural Design Pattern
+### <u>Structural Design Pattern</u>
 
 #### These patterns are used to ease the development of identifying a simple way to realize relationships between the entities.
 - Performance
@@ -58,7 +58,7 @@ Design Patterns
 - Flyweight pattern
 - Proxy pattern
 
-### Behavioral Design Pattern
+### <u>Behavioral Design Pattern</u>
 
 #### These design patterns are used to provide solution for better interaction between objects and how to provide loose coupling and flexibility to extend easily.
 
@@ -66,5 +66,6 @@ Design Patterns
 - Command Pattern
 - Observer pattern
 
+## Working with Creational Design Patterns
 
 
