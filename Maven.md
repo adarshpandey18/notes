@@ -31,7 +31,7 @@ There are other build tools in the ecosystem, with **Gradle** and **Ivy** being 
 To set up a Maven project in IntelliJ IDEA:
 - Choose **Maven** as the build tool when creating a new project.
 - Set the **build path** to Maven. This ensures that the project uses Maven for dependency management and builds.
-![Project Creation]()
+![Project Creation](https://github.com/adarshpandey18/notes/blob/main/images/intellij-gradle-project-create.png)
   
 > **Note:** In some cases, projects created in Eclipse might face issues when opened in IntelliJ IDEA. However, with Maven, the folder structure remains consistent across different IDEs.
 
@@ -39,7 +39,7 @@ To set up a Maven project in IntelliJ IDEA:
 
 On the top right of IntelliJ IDEA, you will see the Maven logo. Clicking on it will show you the **Maven lifecycle**, which outlines the steps involved in building your project (e.g., **compile**, **test**, **package**, **install**).
 
-![Maven Lifecycle Image](#) *(Placeholder for Image)*
+![Maven Lifecycle Image](https://github.com/adarshpandey18/notes/blob/main/images/maven-lifecycle.png) 
 
 ---
 
@@ -99,7 +99,7 @@ A **Maven Archetype** is a template provided by developers to quickly create a n
 - **Catalog Options**:
   - **Internal**: Archetypes stored locally on your system.
   - **Maven Central**: Archetypes available from Maven's online repository.
-![Maven Archeype Project Creation]()
+![Maven Archeype Project Creation](https://github.com/adarshpandey18/notes/blob/main/images/maven-archetype.png)
 
 **Maven Archetypes** make it much easier to get started with common Java project structures, ensuring that all the required files and configurations are set up automatically.
 
