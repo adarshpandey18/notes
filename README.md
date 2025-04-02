@@ -15,10 +15,12 @@ Here are the topics currently available (and more to come!):
 | **JUnit**              | Unit testing in Java with JUnit framework.                                 | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JUnit.md)     |
 | **JDBC**        | JDBCis an  API for the Java which defines how a client may access a database.          | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JDBC.md)|
 | **Maven**       | Project Management Tool.                   | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Maven.md)|
-| **OOPs**               | Object-Oriented Programming concepts with examples.                        | Coming Soon  | -                         |
+| **OS**               | Operating System notes.                       | ⏳ In Progress  | [PDF](https://github.com/adarshpandey18/notes/tree/main/OS-Notes)                         |
 | **DBMS**               | Database Management Systems notes, including SQL and NoSQL.                | Coming Soon  | -                         |
 | **Logical Reasoning**  | Tips, tricks, and practice problems for logical reasoning.                 | Coming Soon  | -                         |
 | **Maths**              | Essential mathematical concepts and formulas.                              | Coming Soon  | -                         |
+| **Git**              | Git & Github notes and commands.                              | ⏳ In Progress  | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Git.md)                         |
+
 
 ---
 
