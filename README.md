@@ -1,5 +1,3 @@
-
-
 # 📚 Notes Repository
 
 Welcome to my **Notes Repository**! This is a curated collection of notes on various topics, including programming, testing frameworks, computer science fundamentals, and more. Whether you're a student, developer, or just someone looking to learn, you'll find useful resources here.
@@ -8,25 +6,25 @@ Welcome to my **Notes Repository**! This is a curated collection of notes on var
 
 ## 📂 **Topics Covered**
 
-Here are the topics currently available (and more to come!):
+Here are the topics currently available (more to come!):
 
-| Topic                  | Description                                                                 | Status       | Link                      |
-|------------------------|-----------------------------------------------------------------------------|--------------|---------------------------|
-| **JUnit**              | Unit testing in Java with JUnit framework.                                 | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JUnit.md)     |
-| **JDBC**        | JDBCis an  API for the Java which defines how a client may access a database.          | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JDBC.md)|
-| **Maven**       | Project Management Tool.                   | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Maven.md)|
-| **OS**               | Operating System notes.                       | ⏳ In Progress  | [PDF](https://github.com/adarshpandey18/notes/tree/main/OS-Notes)                         |
-| **DBMS**               | Database Management Systems notes, including SQL and NoSQL.                | Coming Soon  | -                         |
-| **Logical Reasoning**  | Tips, tricks, and practice problems for logical reasoning.                 | Coming Soon  | -                         |
-| **Maths**              | Essential mathematical concepts and formulas.                              | Coming Soon  | -                         |
-| **Git**              | Git & Github notes and commands.                              | ⏳ In Progress  | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Git.md)                         |
-
+| Topic                | Description                                                               | Status       | Link                                                                  |
+|----------------------|---------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------|
+| **JUnit**            | Unit testing in Java with the JUnit framework.                             | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JUnit.md) |
+| **JDBC**             | JDBC is an API for Java that defines how a client may access a database.   | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/JDBC.md)  |
+| **Maven**            | Project Management Tool for Java projects.                                | ✅ Available | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Maven.md) |
+| **Java**             | Core Java concepts, including syntax, data types, and object-oriented programming. | ⏳ In Progress | [PDF](https://github.com/adarshpandey18/notes/blob/main/java-notes) |
+| **Operating Systems**| Operating System concepts and notes.                                      | ⏳ In Progress | [PDF](https://github.com/adarshpandey18/notes/tree/main/OS-Notes)     |
+| **DBMS**             | Database Management Systems, including SQL and NoSQL.                      | Coming Soon  | -                                                                     |
+| **Logical Reasoning**| Tips, tricks, and practice problems for logical reasoning.                | ⏳ In Progress | [PDF](https://github.com/adarshpandey18/notes/tree/main/Logical%20reasoning) |
+| **Mathematics**      | Essential mathematical concepts and formulas.                             | Coming Soon  | -                                                                     |
+| **Git**              | Git & GitHub notes and commands.                                          | ⏳ In Progress | [Markdown](https://github.com/adarshpandey18/notes/blob/main/Git.md)   |
 
 ---
 
 ## 📝 **Contribution Guidelines**
 
-Contributions are welcome! Here’s how you can help:
+Contributions are welcome! Here's how you can help:
 
 1. **Fork the Repository**.
 2. Create a new branch:
@@ -63,5 +61,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 Happy Learning! 🎉
-
----
